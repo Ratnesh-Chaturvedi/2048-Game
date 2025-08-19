@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    position: relative;
+    color: white;
+    background-color: #111;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+hr{
+    width: 80vmin;
+}
+
+.gameBoard{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(251, 248, 190);
+    border: 6px solid  rgb(251, 248, 190);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile{
+    width: 90px;
+    height: 90px;
+    border: 5px solid hsl(29, 17%, 68%);
+    font-size: 35px;
+    transition: all .3s ease ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.x2{
+    background-color: rgb(255, 126, 227);
+    color: white;
+}
+
+.x4{
+    background-color: rgb(250, 46, 185);
+    color: white;
+}
+.x8{
+    background-color: rgb(255, 138, 60);
+    color: white;
+}
+
+.x16{
+    background-color: rgb(45, 255, 255);
+    color: white;
+}
+
+.x32{
+    background-color: rgb(153, 255, 0);
+    color: white;
+}
+
+.x64{
+    background-color: rgb(54, 255, 134);
+    color: white;
+}
+
+.x128{
+    background-color: rgb(0, 172, 98);
+    color: white;
+}
+
+.x256{
+    background-color: rgb(47, 214, 21);
+    color: white;
+}
+
+.x512{
+    background-color: rgb(67, 31, 183);
+    color: white;
+}
+
+.x1024{
+    background-color: rgb(40, 90, 227);
+    color: white;
+}
+.x2048{
+    background-color: rgb(251, 43, 147);
+    color: white;
+}
+.x4096{
+    background-color: rgb(255, 149, 0);
+    color: white;
+}
+.x8192{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+
+
+#overlay{
+position: absolute;
+height: 500px;
+top: 60%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 500px;
+background-color:rgba(255, 255, 255, 0.324);
+backdrop-filter: blur(5px);
+display: none;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+border-radius: 20px;
+}
+#overlay h2{
+    color: #000;
+    font-size: 3vw;
+}
+#overlay button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+#overlay button:hover{
+    background-color: #333;
+    transform: translateY(-3px);
+}
